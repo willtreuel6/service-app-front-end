@@ -11,4 +11,69 @@
             </div>
         </div>
     </div>
+
+    <p-carousel [value]="gallery" styleClass="custom-carousel" [numVisible]="3" [numScroll]="1" [circular]="true" [autoplayInterval]="3000" [responsiveOptions]="responsiveOptions">
+        <ng-template let-gal pTemplate="item">
+            <div class="product-item">
+                <div class="product-grid-item card">
+                    <div class="relative overflow-hidden" (mouseenter)="hover = gal.galleryId" (mouseleave)="hover = null">
+                        <img src={{gal.galleryPath}} class="w-full block" />
+                        <div class="absolute top-0 left-0 h-full w-full border-round fadein animation-duration-300 select-none" style="background-color: rgba(0,0,0,0.7)" *ngIf="hover === gal.galleryId">
+                            <div class="flex flex-column p-5 h-full">
+                                <span class="block font-medium text-white text-xl mb-3">{{gal.galleryName}}</span>
+                                <span class="font-medium text-400">{{gal.galleryDescription}}</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </ng-template>
+    </p-carousel>
+    <div class="surface-section px-4 py-8 md:px-6 lg:px-8">
+        <div class="text-center bg-no-repeat bg-cover border-round px-6 py-8" style="background: url('../../../assets/images/electrical-wiring.jpg')">
+            <div class="text-white text-6xl font-semibold mb-3">Services Provided</div>
+            <p class="text-gray-300 text-xl mt-0 mb-8 line-height-3">Here at Rochester Electric we provide a number of services to our clients, below you may be able to find the 
+                correct service for your needs.
+            </p>
+        </div>
+        <div class="flex flex-column lg:flex-row px-4 lg:px-6 gap-5 -mt-8">
+            <div class="flex flex-column lg:w-4">
+                <div class="flex align-items-center border-round-top bg-primary text-primary h-5rem px-4">
+                    <i class="pi pi-home mr-2 text-2xl"></i>
+                    <span class="font-semibold text-2xl">Residential Services</span>
+                </div>
+                <div class="surface-card shadow-2 p-4 flex flex-column justify-content-between flex-1 border-round-bottom">
+                    <p class="mt-0 mb-6 line-height-3 text-xl text-00">Aliquam vestibulum morbi blandit cursus risus at ultrices mi. Sollicitudin ac orci phasellus egestas tellus rutrum.</p>
+                    <div class="text-center">
+                        <button pButton label="Learn More" icon="pi pi-arrow-right" iconPos="right" class="p-button-text"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-column lg:w-4">
+                <div class="flex align-items-center border-round-top bg-primary text-primary h-5rem px-4">
+                    <i class="pi pi-building mr-2 text-2xl"></i>
+                    <span class="font-semibold text-2xl">Commercial Services</span>
+                </div>
+                <div class="surface-card shadow-2 p-4 flex flex-column justify-content-between flex-1 border-round-bottom">
+                    <p class="mt-0 mb-6 line-height-3 text-xl text-00">Faucibus ornare suspendisse sed nisi lacus. Urna nunc id cursus metus aliquam eleifend. Augue lacus viverra vitae congue eu consequat ac.</p>
+                    <div class="text-center">
+                        <button pButton label="Learn More" icon="pi pi-arrow-right" iconPos="right" class="p-button-text"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-column lg:w-4">
+                <div class="flex align-items-center border-round-top bg-primary text-primary h-5rem px-4">
+                    <i class="pi pi-clock mr-2 text-2xl"></i>
+                    <span class="font-semibold text-2xl">24/7 Emergency Support</span>
+                </div>
+                <div class="surface-card shadow-2 p-4 flex flex-column justify-content-between flex-1 border-round-bottom">
+                    <p class="mt-0 mb-6 line-height-3 text-xl text-00">Montes nascetur ridiculus mus mauris. Enim tortor at auctor urna nunc id cursus metus. Sed odio morbi quis commodo odio.</p>
+                    <div class="text-center">
+                        <button pButton label="Learn More" icon="pi pi-arrow-right" iconPos="right" class="p-button-text"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
+

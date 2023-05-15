@@ -1,0 +1,56 @@
+[
+    {
+        "galleryId": 1,
+        "galleryName":"Atlantic Beach",
+        "galleryPath":"../../../assets/images/gallery1.jpg",
+        "galleryDescription": "This is a test to see if the description works for the gallery page."
+    },
+    {
+        "galleryId": 2,
+        "galleryName":"Jax Beach",
+        "galleryPath":"../../../assets/images/gallery2.jpg",
+        "galleryDescription": "This is a test to see if the description works for the gallery page."
+    },
+    {
+        "galleryId": 3,
+        "galleryName":"Neptune Beach",
+        "galleryPath":"../../../assets/images/gallery3.jpg",
+        "galleryDescription": "This is a test to see if the description works for the gallery page."
+    },
+    {
+        "galleryId": 5,
+        "galleryName":"Atlantic Beach",
+        "galleryPath":"../../../assets/images/gallery4.jpg",
+        "galleryDescription": "This is a test to see if the description works for the gallery page."
+    },
+    {
+        "galleryId": 6,
+        "galleryName":"Fernandina Beach",
+        "galleryPath":"../../../assets/images/gallery5.jpg",
+        "galleryDescription": "This is a test to see if the description works for the gallery page."
+    },
+    {
+        "galleryId": 7,
+        "galleryName":"Ponte Vedra",
+        "galleryPath":"../../../assets/images/gallery6.jpg",
+        "galleryDescription": "This is a test to see if the description works for the gallery page."
+    },
+    {
+        "galleryId": 8,
+        "galleryName":"San Marco",
+        "galleryPath":"../../../assets/images/gallery7.jpg",
+        "galleryDescription": "This is a test to see if the description works for the gallery page."
+    },
+    {
+        "galleryId": 9,
+        "galleryName":"Jax Beach",
+        "galleryPath":"../../../assets/images/gallery1.jpg",
+        "galleryDescription": "This is a test to see if the description works for the gallery page."
+    },
+    {
+        "galleryId": 10,
+        "galleryName":"Kernan",
+        "galleryPath":"../../../assets/images/gallery4.jpg",
+        "galleryDescription": "This is a test to see if the description works for the gallery page."
+    }
+]
