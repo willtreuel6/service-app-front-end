@@ -40,6 +40,11 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import { HomeComponent } from './components/home/home.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { AboutComponent } from './components/about/about.component';
+import { ResidentialComponent } from './components/residential/residential.component';
+import { CommercialComponent } from './components/commercial/commercial.component';
+import { WorkComponent } from './components/work/work.component';
+import { ContactComponent } from './components/contact/contact.component';
 
 
 @NgModule({
@@ -47,7 +52,12 @@ import { FooterComponent } from './components/footer/footer.component';
     AppComponent,
     HomeComponent,
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
+    AboutComponent,
+    ResidentialComponent,
+    CommercialComponent,
+    WorkComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
